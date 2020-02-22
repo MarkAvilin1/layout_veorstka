@@ -12,15 +12,15 @@ body, html {
 }
 
 body {
-  background-color: #fafafa;
-  font-family: Trebuchet MS, Helvetica;
+  background-color: #ccc;
+  font-family: sans-serif;
 }
 
 /* Шапка сайта */
 
 header {
   width: 100%;
-  padding: 10px 0.5% 0px 0.5%;
+  padding: 9px 0.5% 0px 0.5%;
   background: transparent;
   float: left;
   position: fixed;
@@ -55,7 +55,7 @@ header #logo span {
   #logo {
     margin-top: 15px;
     width: 100%;
-    font-size: 1.5em;
+    font-size: 1.4em;
   }
 
   #about {
@@ -66,15 +66,15 @@ header #logo span {
 
 #about {
   text-align: center;
-  font-size: 1em;
+  font-size: 0.9em;
   line-height: 40px;
   margin-bottom: 10px;
 }
 
-#about > a {color: #fff}
+#about > a {color: #fff; font-weight: bold;}
 
 #about > a:hover {
-  color: #b0b0b0;
+  color: rgb(240, 242, 250);
   text-decoration: underline;
 }
 
@@ -86,24 +86,26 @@ header #logo span {
 
 .fixed {
   z-index: 5000;
-  background-color: #fff;
-  border-bottom: 1px solid silver;
+  background-color: rgb(79, 58, 204);
+  border-bottom: 1px solid white;
+  text-shadow: black 0 0 2px;
+  opacity: 0.95;
 }
 
 header.fixed #logo {
-  color: #343434;
+  color: #fff;
 }
 
-.fixed #about a {color: #343434}
-.fixed #about a:hover {color: #7c7c7c}
+.fixed #about a {color: #fff}
+.fixed #about a:hover {color: rgb(240, 242, 250);}
 
 /* Главный блок на сайте */
 
 #top {
   width: 100%;
-  background-image: url(https://www.lovelymockups.com/wp-content/uploads/2017/01/mackbook-on-table.jpg);
+  background-image: url(https://mgcreativedesign.files.wordpress.com/2014/11/website-design-background.png?w=662&h=372);
   background-blend-mode: multiply;
-  background-color: #2e3a44;
+  background-color: #134268;
   background-size: cover;
   text-align: center;
   color: #fff;
@@ -112,22 +114,22 @@ header.fixed #logo {
 @media (min-width: 1001px) {
   #top {
     font-size: 3em;
-    height: 1000px;
+    height: 700px;
   }
 }
 
 @media (max-width: 1000px) and (min-width: 651px) {
   #top {
     font-size: 2em;
-    height: 600px;
+    height: 500px;
   }
 }
 
 @media (max-width: 650px) {
   #top {
     font-size: 1.3em;
-    padding-top: 50%;
-    height: 500px;
+    padding-top: 30%;
+    height: 400px;
   }
 }
 
@@ -142,16 +144,16 @@ header.fixed #logo {
 }
 
 #top h3 {
-  color: #ccc;
+  color: #fff;
 }
 
-/* Блок с возможностями */
+/* Блок топ */
 
 #main {
   float: left;
-  background-color: #f6f6f6;
-  border-top: 2px solid silver;
-  color: #484848;
+  background-image:linear-gradient(to bottom, #CCC,#EEE, #FFF);
+  border-top: 2px solid gray;
+  color: #222;
   font-size: 1.3em;
 }
 
@@ -183,16 +185,16 @@ header.fixed #logo {
 }
 
 #main h2 {font-size: 3em}
-#main span {color: #a0a0a0}
+#main span {color: #606060}
 
-/* Блок с преимуществами */
+/* Блок с Проектами */
 
 #overview {
   float: left;
-  background-image: url(https://images.unsplash.com/1/work-station-straight-on-view.jpg?ixlib=rb-0.3.5&s=d055e15d0b8fd2de7295b726274d312b&dpr=1&auto=format&fit=crop&w=1000&q=80&cs=tinysrgb);
+  background-image: url(https://lh3.googleusercontent.com/proxy/C-kEqQS-PDGrEBCoT_62Dcmgks4h_u_15S3p6ilXQBB2SwIoi9M8D_6v66ZPnQiEQxpqwoHLxcKb_Ijg0PpxSV-lPs0H34tCGqEl);
 
   background-blend-mode: multiply;
-  background-color: #403f40;
+  background-color: #134268;
   background-size: cover;
   background-attachment: fixed;
 
@@ -255,7 +257,9 @@ header.fixed #logo {
   padding-bottom: 40px;
   padding-top: 70px;
   border-top: 4px solid #ccc;
-  background: #f4f4f4;
+  background-image:linear-gradient(to bottom, #CCC, #FFF, #CCC);
+  box-shadow: black 2px 2px  14px;
+  border-bottom: gray solid 1px;
 }
 
 h1, h2, h3, h4, h5 {
@@ -292,12 +296,12 @@ h1, h2, h3, h4, h5 {
 }
 
 #form_input label > span {
-  color: #e87e7e;
+  color: red;
 }
 
 #form_input input,#form_input textarea {
   margin-bottom: 10px;
-  width: 70%;
+  width: 80%;
   padding: 10px 2%;
   border-radius: 7px;
   border: 2px solid silver;
@@ -314,22 +318,22 @@ h1, h2, h3, h4, h5 {
   border-radius: 5px;
   padding: 5px 9px;
   font-size: 1.2em;
-  background-color: #ec6550;
-  text-shadow: #454545 0 0 2px;
+  background-color: blue;
+  text-shadow: black 0 0 2px;
   cursor: pointer;
   color: white;
   font-family: 'Roboto Slab', serif;
 }
 
 .btn:hover {
-  background-color: #c15443;
+  background-color: #16036e;
 }
 
 /* Вопросы и ответы */
 
 #faq {
+    border-top: gray dotted 1px;
   background-color: #fff;
-  border-top: 2px dashed #e4e3e3;
   width: 100%;
   float: left;
   padding-top: 70px;
@@ -354,13 +358,13 @@ h1, h2, h3, h4, h5 {
 
 #faq .title {
   font-weight: lighter;
-  color: #a3a0ad;
+  color: #444;
   margin-bottom: 20px;
   font-size: 2.2em;
 }
 
 #faq .heading {
-  color: #7d7d7d;
+  color: #666;
   font-size: 1.3em;
   font-weight: bold;
 }
